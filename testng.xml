@@ -3,16 +3,17 @@
 <suite name="Loan Department">
   <test thread-count="5" name="Personal Loan">
     <classes>
-      <class name="day1"/>
-      <class name="day2"></class>
+      <class name="testing.day1"/>
+      <class name="testing.day2"></class>
       </classes>
   </test> <!-- Test -->
 
   <test name="Car Loan">
     <classes>
-      <class name="day3">
+      <class name="testing.day3">
         <methods>
-          <exclude name="MobileLoginCarLoan"></exclude>
+          <!-- Excluding all Mobile test cases with test functions starting with Mobile -->
+          <exclude name="Mobile.*"></exclude>
         </methods>
       </class>
       </classes>
@@ -20,7 +21,7 @@
 
   <test name="Home Loan">
     <classes>
-      <class name="day4">
+      <class name="testing.day4">
         <methods>
           <include name="LoginAPIhomeLoan"></include>
         </methods>
