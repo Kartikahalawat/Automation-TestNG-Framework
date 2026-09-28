@@ -3,6 +3,17 @@ package testing;
 import org.testng.annotations.*;
 
 public class day3 {
+
+    @BeforeClass
+    public void beforeClass(){
+        System.out.println("Before executing all methods of the Class");
+    }
+
+    @AfterClass
+    public void afterClass(){
+        System.out.println("After executing all methods of the Class");
+    }
+
     @Test
     public void Weblogin(){
         System.out.println("Weblogincar");
