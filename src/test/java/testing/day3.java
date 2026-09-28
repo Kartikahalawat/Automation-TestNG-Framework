@@ -19,7 +19,7 @@ public class day3 {
         System.out.println("Weblogincar");
     }
 
-    @Test
+    @Test(groups = {"Smoke"})
     public void MobileLoginCarLoan(){
         System.out.println("MobileLoginCar");
     }

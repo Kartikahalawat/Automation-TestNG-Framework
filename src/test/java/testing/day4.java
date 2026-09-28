@@ -17,8 +17,9 @@ public class day4 {
         System.out.println("Webloginhome");
     }
 
-    @Test
+    @Test(groups = {"Smoke"})
     public void MobileLoginhomeLoan(){
+
         System.out.println("MobileLoginhome");
     }
 
