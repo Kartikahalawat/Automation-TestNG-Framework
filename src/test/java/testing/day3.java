@@ -44,8 +44,9 @@ public class day3 {
         System.out.println("After Suite I am at Last");
     }
 
-    @Test
-    public void LoginAPIcarLoan(){
+    @Test(dependsOnMethods = {"Weblogin", "MobileLoginCarLoan"})
+    public void APIcarLoan(){
+
         System.out.println("LoginAPIcar");
     }
 }
