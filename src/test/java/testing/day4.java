@@ -1,6 +1,7 @@
 package testing;
 
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class day4 {
@@ -12,9 +13,12 @@ public class day4 {
         System.out.println("After test executed");
     }
 
-    @Test(enabled = false)
-    public void WebloginHomeLoan(){
+    @Parameters({"URL"})
+    @Test(enabled = true, timeOut = 3000)
+    public void WebloginHomeLoan(String urlname){
+
         System.out.println("Webloginhome");
+        System.out.println(urlname);
     }
 
     @Test(groups = {"Smoke"})
