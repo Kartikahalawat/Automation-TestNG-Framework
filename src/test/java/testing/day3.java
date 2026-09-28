@@ -14,7 +14,7 @@ public class day3 {
         System.out.println("After executing all methods of the Class");
     }
 
-    @Test
+    @Test(timeOut = 3000)
     public void Weblogin(){
         System.out.println("Weblogincar");
     }
