@@ -1,9 +1,6 @@
 package testing;
 
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class day3 {
     @Test
@@ -19,6 +16,11 @@ public class day3 {
     @BeforeMethod
     public void beforeMethod(){
         System.out.println("Before every test method in day3 class");
+    }
+
+    @AfterMethod
+    public void afterMethod(){
+        System.out.println("After every test method in day3 class");
     }
 
     @BeforeSuite
