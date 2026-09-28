@@ -2,7 +2,7 @@ import org.testng.annotations.Test;
 
 public class day4 {
     @Test
-    public void WebloginHoamLoan(){
+    public void WebloginHomeLoan(){
         System.out.println("Webloginhome");
     }
 
