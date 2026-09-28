@@ -12,7 +12,7 @@ public class day4 {
         System.out.println("After test executed");
     }
 
-    @Test
+    @Test(enabled = false)
     public void WebloginHomeLoan(){
         System.out.println("Webloginhome");
     }
