@@ -14,9 +14,12 @@ public class day3 {
         System.out.println("After executing all methods of the Class");
     }
 
+    @Parameters({"URL"})
     @Test(timeOut = 3000)
-    public void Weblogin(){
+    public void Weblogin(String urlname){
+
         System.out.println("Weblogincar");
+        System.out.println(urlname);
     }
 
     @Test(groups = {"Smoke"})
