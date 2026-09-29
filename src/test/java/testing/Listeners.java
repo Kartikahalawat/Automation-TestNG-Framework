@@ -38,7 +38,7 @@ public class Listeners implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
         ITestListener.super.onTestFailure(result);
-        System.out.println("I failed to executed Listeners Pass code");
+        System.out.println("I failed to executed Listeners Pass code : " + result.getName() + " : " + result.getThrowable());
     }
 
     /**
