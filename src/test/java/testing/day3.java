@@ -23,8 +23,12 @@ public class day3 {
     }
 
     @Test(groups = {"Smoke"})
-    public void MobileLoginCarLoan(){
+    @Parameters({"URL", "APIKey/Username"})
+    public void MobileLoginCarLoan(String URL, String APIKey){
+
         System.out.println("MobileLoginCar");
+        System.out.println(URL);
+        System.out.println(APIKey);
     }
 
     @BeforeMethod

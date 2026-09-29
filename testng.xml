@@ -13,6 +13,8 @@
   </test> <!-- Test -->
 
   <test name="Car Loan">
+    <parameter name="URL" value="carLoan.com"></parameter>
+    <parameter name="APIKey/Username" value="1234567"></parameter>
     <classes>
       <class name="testing.day3">
         <methods>
